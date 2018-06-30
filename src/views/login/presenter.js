@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import InputText from "./form/inputText/presenter";
-import InputPass from "./form/inputPass/presenter";
-import Button from "./form/button/presenter";
-import Checkbox from "./form/checkbox/presenter";
-import Menu from "./menu/presenter";
+import InputText from "views/login/form/inputText/";
+import InputPass from "views/login/form/inputPass/";
+import Button from "views/login/form/button/";
+import Checkbox from "views/login/form/checkbox/";
+import Menu from "views/login/menu/";
 
 
 const Loginwrap = styled.div`
@@ -48,7 +48,8 @@ const Loginbox = (props) => { // state less 방식
                 </Loginlogo>
                 <InputText />
                 <InputPass />
-                <Button />
+                <Link to="/friendlist"><Button /></Link>
+                {/* <Link to="/layout"><Button /></Link> */}
                 <Checkbox />
                 <Link to="/join"><span>회원가입</span></Link>
             </Logininner>

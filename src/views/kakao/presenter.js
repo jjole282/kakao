@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "../../images/ic_top.png";
-import Spicon from "../../images/sp_icon.png";
+import Button from "images/ic_top.png";
+import Spicon from "images/sp_icon.png";
 
 const Spriteicon = styled.span`
     display: inline-block;
@@ -181,14 +181,6 @@ const Message = styled.div`
 const Kakao = (props) => { // state less 방식
     return(
         <Wrapper>
-            <Header>   
-                <h1>Kakaotalk</h1>
-                <Topmn>
-                    <li><a>친구리스트</a></li>
-                    <li><a>대화리스트</a></li>
-                    <li><a>메뉴더보기</a></li>
-                </Topmn>
-            </Header>
             <Middle>
                 <SearchName>
                     <Spriteicon></Spriteicon>

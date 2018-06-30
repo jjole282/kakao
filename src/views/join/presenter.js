@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import InputText from "./form/inputText/presenter";
-import InputPass from "./form/inputPass/presenter";
-import Button from "./form/button/presenter";
-import Menu from "./menu/presenter";
+import InputText from "views/join/form/inputText/";
+import InputPass from "views/join/form/inputPass/";
+import Button from "views/join/form/button/";
+import Menu from "views/join/menu/";
 
 
 

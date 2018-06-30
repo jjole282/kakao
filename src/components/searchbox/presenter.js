@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Spicon from "../../images/sp_icon.png";
+import Spicon from "images/sp_icon.png";
 
 const Spriteicon = styled.span`
     display: inline-block;

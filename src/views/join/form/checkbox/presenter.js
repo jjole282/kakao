@@ -16,7 +16,7 @@ const Checkbox01 = (props) => { // state less 방식
     return(
         <Checkbox>
             <input type="checkbox" id="chk01" />
-            <label for="chk01">잠금모드로 자동로그인</label>
+            <label htmlFor="chk01">잠금모드로 자동로그인</label>
         </Checkbox>
     )
 }

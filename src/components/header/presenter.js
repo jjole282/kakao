@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Nav from "../navi/presenter";
+import Nav from "components/navi/";
 
 const Header = styled.header`
     padding: 15px;

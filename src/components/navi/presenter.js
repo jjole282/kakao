@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Button from "../../images/ic_top.png";
+import Button from "images/ic_top.png";
 
 
 const Navi = styled.ul`
@@ -42,9 +43,9 @@ const Navi = styled.ul`
 const Nav = (props) => { // state less 방식
     return(
         <Navi>
-            <li><a href="#none">친구리스트</a></li>
-            <li><a href="#none">대화리스트</a></li>
-            <li><a href="#none">메뉴더보기</a></li>
+            <li><Link to="/kakao">친구리스트</Link></li>
+            <li><Link to="/friendlist">대화리스트</Link></li>
+            <li><Link to="/friendlist">메뉴더보기</Link></li>
         </Navi>
     )
 }
