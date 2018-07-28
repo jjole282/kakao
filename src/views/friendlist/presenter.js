@@ -52,6 +52,7 @@ const Message = styled.div`
 
 const Friendlist = props => {
 	// state less 방식
+	const { handleOpen, handleClose, chatActive } = props;
 	return (
 		<FriendWrap>
 			<React.Fragment>
@@ -59,7 +60,7 @@ const Friendlist = props => {
 				<FriendlistBox>
 					<h2>내 프로필</h2>
 					<Friend>
-						<li onClick={props.handleOpen}>
+						<li onClick={handleOpen}>
 							<a href="#none">
 								<Userinfo />
 								<Message>카톡 만들기 시작</Message>
@@ -67,7 +68,7 @@ const Friendlist = props => {
 						</li>
 					</Friend>
 				</FriendlistBox>
-				{props.chatActive ? <Talk handleClose={props.handleClose} /> : null}
+				{chatActive ? <Talk handleClose={handleClose} /> : null}
 			</React.Fragment>
 		</FriendWrap>
 	);

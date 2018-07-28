@@ -10,7 +10,7 @@ const Talkwrap = styled.div`
 	height: 100vh;
 `;
 const Top = styled.div`
-	boreder-bottom: 1px solid #1f212d;
+	border-bottom: 1px solid #0e1121;
 	padding: 10px;
 	& a {
 		display: block;
@@ -42,9 +42,8 @@ const ThumbWrap = styled.div`
 
 const Thumb = styled.div`
 	position: absolute;
-	top: 50%;
+	top: 0;
 	left: 0;
-	margin-top: -20px;
 	width: 40px;
 	height: 40px;
 	& img {
@@ -104,10 +103,11 @@ const Message02 = styled.div`
 
 const Talk = props => {
 	// state less 방식
+	const { handleClose } = props;
 	return (
 		<Talkwrap>
 			<Top>
-				<a href="#none" onClick={props.handleClose}>
+				<a href="#none" onClick={handleClose}>
 					<img src={require('../../images/ic_back.jpg')} alt="뒤로가기" />
 				</a>
 				<span>써니</span>

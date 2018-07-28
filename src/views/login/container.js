@@ -1,16 +1,10 @@
-import React, { Component } from "react";
-import Login from "./presenter";
-
+import React, { Component } from 'react';
+import Login from './presenter';
 
 class Container extends Component {
-    render(){
-        return (
-            <Login />
-        )
-    };
-};
-
-
-
+	render() {
+		return <Login {...this.props} />;
+	}
+}
 
 export default Container;
